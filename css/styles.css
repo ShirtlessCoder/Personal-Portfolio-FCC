@@ -51,12 +51,15 @@ img {
 /* nav */
 /* ========================================== */
 
-.nav {
+#navbar {
     background-color: var(--color-navy);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-#navbar {
-}
 
 .nav-list {
     margin-top: 0;
@@ -70,7 +73,6 @@ img {
 }
 
 .nav-list__item {
-    /* display: inline-block; */
     flex: 1 1 30%;
     padding: 2em 0;
     text-align: center;
@@ -107,6 +109,8 @@ img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    padding-top: 96px;
 }
 
 .welcome-content {
@@ -118,7 +122,6 @@ img {
     color: var(--color-cyan);
     font-size: 2.8rem;
     letter-spacing: 1px;
-    line-height: 1.3;
 }
 
 .welcome-section__p {
@@ -271,6 +274,7 @@ img {
     /* margin-right: 2rem; */
     font-size: 1.3rem;
     padding: .5rem 1rem;
+    /* align the icon on the line */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,7 +364,4 @@ img {
     }
 }
 
-/* 2 more points */
-/* The height of the welcome section should be equal to the height of the viewport.
 
-The navbar should always be at the top of the viewport. */
